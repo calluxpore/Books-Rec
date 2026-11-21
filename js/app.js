@@ -218,8 +218,15 @@
   }
 
   /* ───────── masonry with incremental loading ───────── */
-  const COL = 236, GUTTER = 16, CARD_PAD = 8, TEXT_H = 64, BATCH = 30;
-  let current = [], shown = 0, cols = [], colH = [], colW = COL;
+  // Placement rules:
+  //  1. Before a batch goes in, learn each cover's real aspect ratio (time-limited),
+  //     so every card has its final height the moment it is placed.
+  //  2. Each card goes into the column that is *measured* shortest right now
+  //     (covers + wrapped titles), not an estimate.
+  //  3. After the last card, if one column overhangs by more than a whole card,
+  //     move its last card to the shortest column (before paint, so nothing jumps).
+  const COL = 236, GUTTER = 16, BATCH = 30;
+  let current = [], shown = 0, cols = [], colW = COL, gen = 0, busy = false;
 
   function columnsFor() {
     const host = $("[data-masonry]");
@@ -229,7 +236,33 @@
     return { n, w };
   }
 
+  // Resolve a cover's height/width ratio, cached. Missing or broken covers use 3:2 (placeholder tile).
+  const probing = new Map();
+  function probe(b) {
+    if (ratios.has(b.id)) return Promise.resolve();
+    if (!b.cover) { ratios.set(b.id, 1.5); return Promise.resolve(); }
+    if (!probing.has(b.id)) {
+      probing.set(b.id, new Promise((res) => {
+        const img = new Image();
+        img.referrerPolicy = "no-referrer";
+        img.onload = () => { if (img.naturalWidth) ratios.set(b.id, img.naturalHeight / img.naturalWidth); res(); };
+        img.onerror = () => { ratios.set(b.id, 1.5); res(); };
+        img.src = b.cover;
+      }));
+    }
+    return probing.get(b.id);
+  }
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  const shortest = () => {
+    let c = 0;
+    for (let k = 1; k < cols.length; k++) if (cols[k].offsetHeight < cols[c].offsetHeight) c = k;
+    return c;
+  };
+
   function renderFeed() {
+    gen++;
+    busy = false;
     current = filtered();
     shown = 0;
     const host = $("[data-masonry]");
@@ -239,29 +272,51 @@
     document.documentElement.style.setProperty("--feed-w", n * w + (n - 1) * GUTTER + "px");
     host.innerHTML = Array.from({ length: n }, () => '<div class="masonry__col"></div>').join("");
     cols = $$(".masonry__col", host);
-    colH = new Array(n).fill(0);
     $("[data-feed-title]").textContent = feedTitle();
     $("[data-feed-count]").textContent = current.length === books.length
       ? `${books.length} books`
       : `${current.length} of ${books.length} books`;
     $("[data-empty]").hidden = current.length > 0;
-    appendBatch();
+    $("[data-sentinel]").hidden = current.length === 0;
+    return appendBatch();
   }
 
-  function appendBatch() {
+  async function appendBatch() {
+    if (busy || shown >= current.length) return;
+    busy = true;
+    const myGen = gen;
     const next = current.slice(shown, shown + BATCH);
-    next.forEach((b, i) => {
-      const c = colH.indexOf(Math.min(...colH));
-      cols[c].insertAdjacentHTML("beforeend", pinHTML(b, shown + i));
-      colH[c] += (colW - 2 * CARD_PAD) * (ratios.get(b.id) || 1.5) + 2 * CARD_PAD + TEXT_H + GUTTER;
-    });
+    // First batch waits less so the page shows quickly; later batches load ahead of the reader.
+    await Promise.race([Promise.all(next.map(probe)), wait(shown === 0 ? 1200 : 3000)]);
+    if (myGen !== gen) return; // filters changed while we waited
+
+    next.forEach((b, i) => cols[shortest()].insertAdjacentHTML("beforeend", pinHTML(b, shown + i)));
     shown += next.length;
+    if (shown >= current.length) settle();
     $("[data-sentinel]").hidden = shown >= current.length;
+    busy = false;
+
+    // If the new cards didn't push the sentinel out of range, keep going.
+    const s = $("[data-sentinel]").getBoundingClientRect();
+    if (shown < current.length && s.top < innerHeight + 1200) appendBatch();
+  }
+
+  // Even out the ragged bottom: move last cards from the tallest column while it overhangs by more than a card.
+  function settle() {
+    for (let guard = 0; guard < 12; guard++) {
+      const h = cols.map((c) => c.offsetHeight);
+      const t = h.indexOf(Math.max(...h)), sIdx = h.indexOf(Math.min(...h));
+      const last = cols[t].lastElementChild;
+      if (!last) return;
+      const lh = last.offsetHeight + GUTTER;
+      if (h[t] - h[sIdx] <= lh) return; // moving it would not shrink the gap
+      cols[sIdx].appendChild(last);
+    }
   }
 
   // Load more when the sentinel nears the viewport.
   new IntersectionObserver((entries) => {
-    if (entries.some((e) => e.isIntersecting) && shown < current.length) appendBatch();
+    if (entries.some((e) => e.isIntersecting)) appendBatch();
   }, { rootMargin: "1200px 0px" }).observe($("[data-sentinel]"));
 
   // Learn real ratios as covers load; swap broken covers for a placeholder.
@@ -279,18 +334,18 @@
     if (!(img instanceof HTMLImageElement) || !img.hasAttribute("data-cover")) return;
     const id = (img.closest("[data-id]") || img.closest("[data-open]") || {}).dataset?.open;
     const b = books.find((x) => x.id === id);
-    if (b) img.outerHTML = placeholder(b);
+    if (b) { ratios.set(b.id, 1.5); img.outerHTML = placeholder(b); }
   }, true);
 
   let rt;
   addEventListener("resize", () => {
     clearTimeout(rt);
-    rt = setTimeout(() => {
+    rt = setTimeout(async () => {
       const { n, w } = columnsFor();
       if (n !== cols.length || w !== colW) {
         const keep = shown;
-        renderFeed();
-        while (shown < keep && shown < current.length) appendBatch();
+        await renderFeed();
+        while (shown < keep && shown < current.length) { busy = false; await appendBatch(); }
       }
     }, 150);
   });

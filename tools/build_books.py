@@ -33,6 +33,9 @@ VAULT = Path(r"D:\Vault\Sammy.Decimal")
 DEFAULT_SRC = VAULT / "00-09 🐧 System" / "04 Database" / "Bases" / "Book Database"
 COVERS = ROOT / "assets" / "covers"
 OUT = ROOT / "js" / "books.js"
+# Fallback descriptions for notes with an empty Summary section, keyed by book id.
+DESCRIPTIONS_FILE = ROOT / "data" / "descriptions.json"
+DESCRIPTIONS = json.loads(DESCRIPTIONS_FILE.read_text(encoding="utf-8")) if DESCRIPTIONS_FILE.exists() else {}
 IMG_EXT = (".jpg", ".jpeg", ".png", ".webp", ".avif")
 
 # Site-only rules. Your Obsidian notes are never changed.
@@ -106,8 +109,19 @@ def summary(body):
     m = re.search(r"^#{2,}\s*Summary\s*$\n(.*?)(?=^#{1,}\s|^---\s*$|\Z)", body, re.S | re.M)
     if not m:
         return None
-    text = clean(re.sub(r"\s*\n\s*", " ", m.group(1)).strip())
-    if not text or len(text) < 12:
+    # Bulleted notes become sentences: drop the "- " markers, end each point with a full stop.
+    parts = []
+    for line in m.group(1).splitlines():
+        line = re.sub(r"^\s*(?:[-*+]|\d+[.)])\s+", "", line).strip()
+        if not line:
+            continue
+        line = line[0].upper() + line[1:]
+        line = re.sub(r"(?<!\w)_([^_\n]+)_(?!\w)", r"\1", line).rstrip(",;")
+        if not re.search(r"[.!?…:\"”’)]$", line):
+            line += "."
+        parts.append(line)
+    text = clean(" ".join(parts))
+    if not text or len(text) < 12 or text.lower().rstrip(".") == "no description available":
         return None
     return text if len(text) <= 600 else text[:597].rsplit(" ", 1)[0] + "…"
 
@@ -138,7 +152,7 @@ def read_note(path):
 
 def build(src):
     notes = sorted(p for p in src.iterdir() if p.suffix.lower() == ".md")
-    books, ids, report = [], set(), {"no_cover": [], "local": [], "copied": [], "missing_image": []}
+    books, ids, report = [], set(), {"no_cover": [], "no_summary": [], "local": [], "copied": [], "missing_image": []}
 
     skipped = []
     for p in notes:
@@ -185,9 +199,11 @@ def build(src):
             b["format"] = fmt
         if not blank(fm.get("feature")):
             b["pick"] = True
-        s = summary(body)
+        s = summary(body) or DESCRIPTIONS.get(book_id)  # the note's own Summary wins
         if s:
             b["summary"] = s
+        else:
+            report["no_summary"].append(title)
 
         # Cover
         local = find_local_cover(book_id)
@@ -236,7 +252,7 @@ if __name__ == "__main__":
     from collections import Counter
     print(f"Notes found: {len(notes)}   Skipped (excluded series): {len(report['skipped'])}   Books written: {len(books)}")
     print("Status:", dict(Counter(b["status"] for b in books)))
-    print("Covers from assets/covers:", len(report["local"]))
-    for k in ("copied", "no_cover", "missing_image"):
+    print("Covers from assets/covers:", len(report["local"]), "  Books without a description:", len(report["no_summary"]))
+    for k in ("copied", "no_cover", "missing_image", "no_summary"):
         if report[k]:
             print(f"{k}:", *report[k], sep="\n  ")

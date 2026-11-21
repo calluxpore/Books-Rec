@@ -15,6 +15,8 @@ Two settings at the top of `tools/build_books.py` shape the site without touchin
 
 Then commit and push. Status mapping when not forced: `read`/`completed` show as Read, `started` as Reading now, `triage`/`to-read` as To read. A non-empty `feature` makes a book a Top pick.
 
+**Descriptions.** Each book's description comes from the Summary section of its note. For notes with an empty Summary, the build uses `data/descriptions.json` (keyed by book id). A note's own Summary always wins, so filling one in Obsidian replaces the fallback. The build prints how many books still lack a description.
+
 **Covers.** The script uses, in order: a file in `assets/covers/` named after the book's `id` (see `js/books.js`, e.g. `assets/covers/project-hail-mary.jpg`), then the `cover` URL from the note, then a pasted image from the vault. With none of those, the site shows a coloured placeholder tile. Re-run the script after adding a cover file.
 
 ## Publish on GitHub Pages

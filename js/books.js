@@ -50,6 +50,7 @@ window.SHELF = {
       ],
       "year": 1957,
       "readYear": 2026,
+      "summary": "From a passing train, Elspeth McGillicuddy sees a woman strangled in another carriage, but no body is ever found. Miss Marple plants a sharp young housekeeper at a grand country house beside the tracks to uncover what happened.",
       "cover": "https://m.media-amazon.com/images/I/71x2g+5Z7KL._SL1500_.jpg"
     },
     {
@@ -86,6 +87,7 @@ window.SHELF = {
       ],
       "year": 1964,
       "readYear": 2026,
+      "summary": "On a sunny holiday in the West Indies, Miss Marple listens to a garrulous old major's story about a murderer, and the next morning he is dead. Far from her village, she sets out to find the killer before they strike again.",
       "cover": "https://m.media-amazon.com/images/I/71OLrAztjHL._SL1500_.jpg"
     },
     {
@@ -103,7 +105,7 @@ window.SHELF = {
       ],
       "year": 2000,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Three psychiatrists draw on neuroscience and evolution to explain how emotional bonds shape the brain. They argue that relationships physically regulate our nervous systems, and that love is essential to wellbeing.",
       "cover": "https://covers.openlibrary.org/b/olid/OL18105217M-L.jpg"
     },
     {
@@ -123,6 +125,7 @@ window.SHELF = {
       "readYear": 2025,
       "rating": 4.5,
       "pick": true,
+      "summary": "A guide for first-time researchers on choosing a research topic. It walks through narrowing interests, reviewing literature and shaping a researchable question.",
       "cover": "https://m.media-amazon.com/images/I/41XiJTqJBRS._SY445_SX342_.jpg"
     },
     {
@@ -141,6 +144,7 @@ window.SHELF = {
       ],
       "year": 1950,
       "readYear": 2026,
+      "summary": "A notice in the local paper announces that a murder will take place at Little Paddocks on Friday evening. Curious neighbours gather for what they assume is a party game, until the lights go out and the shots are real. Miss Marple untangles the village's secrets.",
       "cover": "https://m.media-amazon.com/images/I/71E1IV89mYL._SL1500_.jpg"
     },
     {
@@ -159,6 +163,7 @@ window.SHELF = {
       ],
       "year": 1953,
       "readYear": 2026,
+      "summary": "A wealthy businessman collapses over his morning tea, and rye grain is found in his pocket. When more deaths follow the pattern of a nursery rhyme, Miss Marple arrives to see justice done for a former maid of hers.",
       "cover": "https://m.media-amazon.com/images/I/71iLGJ3uTkL._SL1500_.jpg"
     },
     {
@@ -175,6 +180,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2025,
+      "summary": "La Paperson argues that beyond the first university (academic capitalism) and the second (critical scholarship) there is a third: decolonising projects working inside and against the academy. A short, provocative book on higher education and settler colonialism.",
       "cover": "https://m.media-amazon.com/images/I/71EA6KEzMyL._SL1500_.jpg"
     },
     {
@@ -191,6 +197,7 @@ window.SHELF = {
       ],
       "year": 2015,
       "readYear": 2025,
+      "summary": "Psychologist Stephen Hinshaw and journalist Katherine Ellison answer common questions about ADHD in plain language. They cover causes, diagnosis, treatment options and how the condition affects children and adults.",
       "cover": "https://m.media-amazon.com/images/I/819n6d45B7L._SL1500_.jpg"
     },
     {
@@ -208,7 +215,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Kai-Fu Lee and novelist Chen Qiufan combine ten short stories set in 2041 with essays on the technology behind each. Together they imagine how artificial intelligence could change work, health, education, privacy and society over the next twenty years.",
       "cover": "https://m.media-amazon.com/images/I/61xjUk6GmyL._SL1500_.jpg"
     },
     {
@@ -226,7 +233,7 @@ window.SHELF = {
       ],
       "year": 2024,
       "readYear": 2026,
-      "summary": "\"AI Engineering: Building Applications with Foundation Models\" by Chip Huyen offers a comprehensive guide to developing robust, scalable, and production-ready AI applications using foundation models. The book distinguishes AI engineering from traditional machine learning engineering, focusing on a product-oriented approach that leverages existing models to validate concepts before extensive data and model development. Key aspects covered in the book include:    Overview of AI Engineering: It introduces the new AI stack and explains how AI engineering differs from traditional ML…",
+      "summary": "\"AI Engineering: Building Applications with Foundation Models\" by Chip Huyen offers a comprehensive guide to developing robust, scalable, and production-ready AI applications using foundation models. The book distinguishes AI engineering from traditional machine learning engineering, focusing on a product-oriented approach that leverages existing models to validate concepts before extensive data and model development. Key aspects covered in the book include: Overview of AI Engineering: It introduces the new AI stack and explains how AI engineering differs from traditional ML engineering.…",
       "cover": "https://m.media-amazon.com/images/I/71zFkvCcY4L._SL1314_.jpg"
     },
     {
@@ -244,7 +251,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Ogilvy's Rory Sutherland argues that logic alone is a poor guide to human behaviour. Through stories from advertising and behavioural science, he shows how small, seemingly irrational ideas can solve problems that rational ones can't.",
       "cover": "https://covers.openlibrary.org/b/olid/OL28255140M-L.jpg"
     },
     {
@@ -264,6 +271,7 @@ window.SHELF = {
       ],
       "year": 2009,
       "readYear": 2025,
+      "summary": "Mohamad Khabazi's introduction to generative and algorithmic design using Grasshopper for Rhino. It explains parametric modelling concepts step by step with examples.",
       "cover": "https://i.pinimg.com/originals/33/80/11/338011b6a864f6de559e991b1787cea6.png"
     },
     {
@@ -322,6 +330,7 @@ window.SHELF = {
       ],
       "year": 1965,
       "readYear": 2026,
+      "summary": "Bertram's Hotel in London seems perfectly preserved from Edwardian times, which is exactly why Miss Marple chooses it for a nostalgic stay. Something about the place is too good to be true, and a disappearance and a murder prove her right.",
       "cover": "https://m.media-amazon.com/images/I/71LKIwyoP7L._SL1500_.jpg"
     },
     {
@@ -339,6 +348,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "James Clear argues that big changes come from small habits repeated consistently. He sets out a practical system, built around making habits obvious, attractive, easy and satisfying, for building good routines and breaking bad ones.",
       "cover": "https://m.media-amazon.com/images/I/817HaeblezL._SL1500_.jpg"
     },
     {
@@ -356,7 +366,7 @@ window.SHELF = {
       ],
       "year": 2011,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Vicki Halsey offers a practical model for designing training and presentations that keep learners engaged. She focuses on connecting with an audience, making content stick and helping people apply what they learn.",
       "cover": "https://covers.openlibrary.org/b/olid/OL37047439M-L.jpg"
     },
     {
@@ -376,7 +386,7 @@ window.SHELF = {
       "readYear": 2026,
       "pages": 272,
       "isbn": "9781982167394",
-      "summary": "In Building a Second Brain, Tiago Forte introduces a systematic methodology for saving, organizing, and retrieving digital information to enhance creativity and productivity. Forte proposes that since our biological brains are designed for having ideas, not holding them, we should construct an external \"Second Brain\" using digital tools. The core of the book revolves around two main frameworks: 1. CODE (Capture, Organize, Distill, Express): The workflow for processing information. 2. PARA (Projects, Areas, Resources, Archives): The organizational structure for digital files and notes,…",
+      "summary": "In Building a Second Brain, Tiago Forte introduces a systematic methodology for saving, organizing, and retrieving digital information to enhance creativity and productivity. Forte proposes that since our biological brains are designed for having ideas, not holding them, we should construct an external \"Second Brain\" using digital tools. The core of the book revolves around two main frameworks: CODE (Capture, Organize, Distill, Express): The workflow for processing information. PARA (Projects, Areas, Resources, Archives): The organizational structure for digital files and notes,…",
       "cover": "https://tse1.mm.bing.net/th/id/OIP.LJ_00DMdaR047TTH0Mqf6wHaKe?r=0&w=724&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
@@ -393,6 +403,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "Former Navy SEAL David Goggins tells how he went from a childhood of poverty and abuse to elite military service and ultra-endurance racing. He shares the mental tactics he uses to push past self-imposed limits.",
       "cover": "https://m.media-amazon.com/images/I/81qEgMaVljL._SL1500_.jpg"
     },
     {
@@ -432,6 +443,7 @@ window.SHELF = {
       ],
       "year": 2007,
       "readYear": 2025,
+      "summary": "Nader Zamani and Jonathan Weaver's step-by-step tutorials on mechanism design and animation in CATIA V5. Exercises build joints, simulate motion and analyse mechanisms.",
       "cover": "https://m.media-amazon.com/images/I/51CG2-K3fOL._SY385_.jpg"
     },
     {
@@ -509,7 +521,7 @@ window.SHELF = {
       ],
       "year": 2016,
       "readYear": 2025,
-      "summary": "- It is Basically a story of physics professor who fights all odds to get back to her loved ones. - Plot has quantum physics as mode of travel inside the book",
+      "summary": "It is Basically a story of physics professor who fights all odds to get back to her loved ones. Plot has quantum physics as mode of travel inside the book.",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1472119680l/27833670._SY475_.jpg"
     },
     {
@@ -527,6 +539,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2025,
+      "summary": "A toolkit from Board of Innovation for running a one-day ideation workshop. It includes a session plan, exercises and templates for generating and selecting ideas with a team.",
       "cover": "assets/covers/day-ideation-workshop.png"
     },
     {
@@ -545,6 +558,7 @@ window.SHELF = {
       ],
       "year": 2011,
       "readYear": 2025,
+      "summary": "Maggie Macnab shows how patterns found in nature, such as spirals, branching and symmetry, can inform graphic design. Rich with examples, the book connects geometry, symbolism and visual communication.",
       "cover": "https://m.media-amazon.com/images/I/51XdRUysQkL.jpg"
     },
     {
@@ -562,7 +576,7 @@ window.SHELF = {
       ],
       "year": 2011,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Julie Dirksen applies findings from cognitive psychology to designing training and learning experiences. With accessible illustrations, she covers motivation, memory, attention and how to help people change behaviour.",
       "cover": "https://covers.openlibrary.org/b/olid/OL28319863M-L.jpg"
     },
     {
@@ -581,6 +595,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "Anthropologist Arturo Escobar argues that design is deeply tied to modernity and capitalism, and proposes autonomous design: approaches that support communities in shaping their own futures within a pluriverse of ways of living.",
       "cover": "https://m.media-amazon.com/images/I/71cxXItP9lL._SL1500_.jpg"
     },
     {
@@ -600,6 +615,7 @@ window.SHELF = {
       ],
       "year": 2007,
       "readYear": 2025,
+      "summary": "Tracy Bhamra and Vicky Lofthouse offer a practical introduction to sustainable design, from eco-design principles to designing for behaviour change, with tools and case studies.",
       "cover": "https://m.media-amazon.com/images/I/51EOB9BN8dL.jpg"
     },
     {
@@ -618,6 +634,7 @@ window.SHELF = {
       ],
       "year": 2012,
       "readYear": 2025,
+      "summary": "John Edson draws seven lessons from Apple's approach to product design. He looks at how design shapes the whole business and customer experience, from products to packaging to retail.",
       "cover": "https://m.media-amazon.com/images/I/71FTQy5rB-L._SL1500_.jpg"
     },
     {
@@ -636,6 +653,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2025,
+      "summary": "Pascal Le Masson, Benoit Weil and Armand Hatchuel present design theory, including C-K theory, as a basis for organising innovation. The book links theory to methods and to how firms manage creative work.",
       "cover": "https://tse3.mm.bing.net/th/id/OIP.-wA3QeRVHC1qN9jCONIvUQHaLJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
@@ -652,6 +670,7 @@ window.SHELF = {
       ],
       "year": 2016,
       "readYear": 2025,
+      "summary": "A practical introduction to design thinking. It walks through empathising, defining, ideating, prototyping and testing, with tools for each stage.",
       "cover": "https://cdn.slidesharecdn.com/ss_thumbnails/designthinkingtheguidebook-200404084813-thumbnail.jpg?width=640&height=640&fit=bounds"
     },
     {
@@ -671,6 +690,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2025,
+      "summary": "John Creswell and Vicki Plano Clark's widely used textbook on combining quantitative and qualitative research. It explains the main mixed-methods designs and how to plan, carry out and report a study.",
       "cover": "https://m.media-amazon.com/images/I/91UuKDuZVbL._SL1500_.jpg"
     },
     {
@@ -690,6 +710,7 @@ window.SHELF = {
       ],
       "year": 2010,
       "readYear": 2025,
+      "summary": "Andy Farnell's guide to procedural audio: building sound effects from scratch using synthesis in Pure Data. He explains the physics of sound and works through practical examples, from footsteps to engines.",
       "cover": "https://m.media-amazon.com/images/I/71zn+bRD9ML._SL1500_.jpg"
     },
     {
@@ -712,7 +733,7 @@ window.SHELF = {
       "readYear": 2026,
       "pages": 340,
       "isbn": "9781953946058",
-      "summary": "\"Diversity, Equity, and Inclusion for Trainers: Fostering DEI in the Workplace\" by Maria Morukian is a comprehensive guide designed for both professional and accidental trainers to develop the skills necessary to implement and facilitate effective diversity, equity, and inclusion (DEI) initiatives. It addresses the scarcity of practical resources for trainers, offering a roadmap for embedding DEI concepts into organizational learning and culture. Key aspects covered in the book include:    Comprehensive Guidance: Covers the entire process of organizational assessment, training design,…",
+      "summary": "\"Diversity, Equity, and Inclusion for Trainers: Fostering DEI in the Workplace\" by Maria Morukian is a comprehensive guide designed for both professional and accidental trainers to develop the skills necessary to implement and facilitate effective diversity, equity, and inclusion (DEI) initiatives. It addresses the scarcity of practical resources for trainers, offering a roadmap for embedding DEI concepts into organizational learning and culture. Key aspects covered in the book include: Comprehensive Guidance: Covers the entire process of organizational assessment, training design,…",
       "cover": "https://m.media-amazon.com/images/I/81vG+9lNYlL._SL1500_.jpg"
     },
     {
@@ -731,6 +752,7 @@ window.SHELF = {
       ],
       "year": 1997,
       "readYear": 2025,
+      "summary": "Richard Carlson offers a hundred short pieces of advice for keeping small irritations in perspective. The book encourages patience, kindness and gratitude as ways to live a calmer life.",
       "cover": "https://a.media-amazon.com/images/I/41a7lAKOpcL._SX342_SY445_.jpg"
     },
     {
@@ -748,7 +770,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Andy Lancaster sets out how learning and development teams can move from delivering courses to improving performance at work. He covers needs analysis, design for everyday learning, technology and measuring impact.",
       "cover": "https://covers.openlibrary.org/b/olid/OL28721810M-L.jpg"
     },
     {
@@ -788,6 +810,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "John Creswell's textbook introduces the process of planning, conducting and evaluating educational research. It covers both quantitative and qualitative methods with examples from real studies.",
       "cover": "https://m.media-amazon.com/images/I/61l4nEd+slL.jpg"
     },
     {
@@ -806,6 +829,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "Pamela Pavliscak explores how to design technology that recognises and responds to human emotion. She covers emotional AI, ethics and practical methods for designing with feeling in mind.",
       "cover": "https://learning.oreilly.com/library/cover/9781491953136/250w.jpg"
     },
     {
@@ -825,6 +849,7 @@ window.SHELF = {
       ],
       "year": 2015,
       "readYear": 2025,
+      "summary": "Brent Davis, Dennis Sumara and Rebecca Luce-Kapler explore teaching through the lens of complexity science. They examine theories of learning and what they mean for classrooms and curriculum.",
       "cover": "https://m.media-amazon.com/images/I/414HZT3PVVL.jpg"
     },
     {
@@ -842,7 +867,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Marie Forleo shares the belief that has guided her life and business: that every problem has a solution if you keep trying. She offers exercises for overcoming fear, excuses and perfectionism to make progress on your goals.",
       "cover": "https://covers.openlibrary.org/b/olid/OL27308017M-L.jpg"
     },
     {
@@ -881,6 +906,7 @@ window.SHELF = {
       ],
       "year": 2015,
       "readYear": 2025,
+      "summary": "Kenya Hara, art director of Muji, presents projects in which students take familiar things and make them unfamiliar again. He explains exformation as the opposite of information: making us aware of how little we really know.",
       "cover": "https://m.media-amazon.com/images/I/719n8xtSu9L._SL1500_.jpg"
     },
     {
@@ -900,6 +926,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "An edited collection on inventive ways of doing ethnography. Contributors experiment with format, collaboration and media to rethink how anthropological research is carried out and shared.",
       "cover": "https://m.media-amazon.com/images/I/91LQSlUUf8L._SL1500_.jpg"
     },
     {
@@ -917,7 +944,7 @@ window.SHELF = {
       ],
       "year": 1990,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Stephen LaBerge and Howard Rheingold explain lucid dreaming, being aware that you are dreaming while it happens. The book offers step-by-step techniques for learning to dream lucidly and using dreams for creativity and growth.",
       "cover": "https://covers.openlibrary.org/b/olid/OL17178633M-L.jpg"
     },
     {
@@ -1018,7 +1045,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Jon Acuff tackles why so many people start goals and never complete them. He argues that perfectionism is the real obstacle and suggests strategies such as cutting goals in half and choosing what to bomb.",
       "cover": "https://covers.openlibrary.org/b/olid/OL27409135M-L.jpg"
     },
     {
@@ -1038,7 +1065,7 @@ window.SHELF = {
       ],
       "year": 1990,
       "readYear": 2025,
-      "summary": "<!-- No more than a couple paragraphs summarizing my thoughts -->",
+      "summary": "<!-- No more than a couple paragraphs summarizing my thoughts -->.",
       "cover": "https://m.media-amazon.com/images/I/41ukPoG0sIL._SY445_SX342_FMwebp_.jpg"
     },
     {
@@ -1081,6 +1108,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2025,
+      "summary": "Michael Hyatt presents a productivity system built on three steps: stop, cut and act. It aims to help readers do less but better, protecting time for the work and life that matter most.",
       "cover": "https://m.media-amazon.com/images/I/71wEKBRocPL._SL1500_.jpg"
     },
     {
@@ -1102,7 +1130,7 @@ window.SHELF = {
       "readYear": 2026,
       "pages": 150,
       "isbn": "9781789392302",
-      "summary": "\"From the Wizarding Archive: Curated Writing from the World of Harry Potter Volume 2\" compiles 35 articles by J.K. Rowling that provide deep dives into the institutions, dark forces, and characters of Hogwarts and the Ministry of Magic. The content in this volume was previously released in 2016 as three short \"Pottermore Presents\" eBooks: 1. Short Stories from Hogwarts of Power, Politics and Pesky Poltergeists 2. Short Stories from Hogwarts of Heroism, Hardship and Dangerous Hobbies 3. Hogwarts: An Incomplete and Unreliable Guide This volume features detailed character backstories for…",
+      "summary": "\"From the Wizarding Archive: Curated Writing from the World of Harry Potter Volume 2\" compiles 35 articles by J.K. Rowling that provide deep dives into the institutions, dark forces, and characters of Hogwarts and the Ministry of Magic. The content in this volume was previously released in 2016 as three short \"Pottermore Presents\" eBooks: Short Stories from Hogwarts of Power, Politics and Pesky Poltergeists. Short Stories from Hogwarts of Heroism, Hardship and Dangerous Hobbies. Hogwarts: An Incomplete and Unreliable Guide. This volume features detailed character backstories for figures…",
       "cover": "https://tse4.mm.bing.net/th/id/OIP.UP1sbzongRueVk2hKjOrTgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
@@ -1142,6 +1170,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2025,
+      "summary": "A toolkit from Board of Innovation for spotting trends and scanning the future. It helps teams explore signals of change and turn them into opportunities for innovation.",
       "cover": "assets/covers/futurescan.png"
     },
     {
@@ -1159,7 +1188,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Sanjay Sarma and Luke Yoquinto, both of MIT, look at the science of learning and at why education systems often ignore it. They explore how research in cognition and neuroscience could reshape how we teach.",
       "cover": "https://covers.openlibrary.org/b/olid/OL28943602M-L.jpg"
     },
     {
@@ -1177,7 +1206,7 @@ window.SHELF = {
       ],
       "year": 2008,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Tal Ben-Shahar, who taught one of Harvard's most popular courses, explains positive psychology's view of happiness as a mix of pleasure and meaning. He includes exercises for building a more fulfilling life.",
       "cover": "https://covers.openlibrary.org/b/olid/OL48102648M-L.jpg"
     },
     {
@@ -1379,6 +1408,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2025,
+      "summary": "Bon Ku and Ellen Lupton show how human-centred design methods can improve healthcare. Case studies and exercises cover products, services and environments designed with patients and clinicians.",
       "cover": "https://m.media-amazon.com/images/I/81Blnym+TNL._SL1500_.jpg"
     },
     {
@@ -1415,7 +1445,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Derek Thompson explores why some songs, films, products and ideas become hits while others don't. He looks at familiarity, novelty, distribution and network effects to explain popularity in a crowded media age.",
       "cover": "https://covers.openlibrary.org/b/olid/OL27409078M-L.jpg"
     },
     {
@@ -1456,7 +1486,7 @@ window.SHELF = {
       ],
       "year": 2022,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Scientist Vaclav Smil explains the material basics of modern life: energy, food production, materials such as steel and cement, globalisation, risk and the environment. He argues for clear numbers over optimism or doom.",
       "cover": "https://covers.openlibrary.org/b/olid/OL35038410M-L.jpg"
     },
     {
@@ -1476,6 +1506,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "Aditi and Sudhir Singhal, with Bala Kishore, offer practical techniques for building focus and reducing distraction. Exercises and habits aim to improve attention in study, work and daily life.",
       "cover": "https://m.media-amazon.com/images/I/91WR3iYBTKL._SL1500_.jpg"
     },
     {
@@ -1494,6 +1525,7 @@ window.SHELF = {
       ],
       "year": 2015,
       "readYear": 2025,
+      "summary": "Aditi and Sudhir Singhal teach memory techniques such as association, visualisation and mnemonics. Aimed especially at students, the book applies them to remembering facts, formulas and exam material.",
       "cover": "https://m.media-amazon.com/images/I/71bbqcy4LCL._SL1500_.jpg"
     },
     {
@@ -1534,6 +1566,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2025,
+      "summary": "Sönke Ahrens explains the Zettelkasten method of note-taking used by sociologist Niklas Luhmann. He shows how linking small, permanent notes turns reading into a steady supply of ideas for writing.",
       "cover": "https://m.media-amazon.com/images/I/61OuuY8BfLL._SL1360_.jpg"
     },
     {
@@ -1553,6 +1586,7 @@ window.SHELF = {
       ],
       "year": 2014,
       "readYear": 2025,
+      "summary": "Science reporter Benedict Carey looks at what research says about how memory and learning actually work. He makes the case for spacing study sessions, mixing subjects, testing yourself and taking breaks.",
       "cover": "https://m.media-amazon.com/images/I/71YqIbtR+ML._SL1500_.jpg"
     },
     {
@@ -1572,6 +1606,7 @@ window.SHELF = {
       ],
       "year": 2007,
       "readYear": 2026,
+      "summary": "Archaeologist Nina Wilde believes she can find the lost city of Atlantis and teams up with ex-SAS bodyguard Eddie Chase. Their race around the world puts them against a powerful foundation that wants the secret buried.",
       "cover": "https://m.media-amazon.com/images/I/81-k-Sp451L._SL1500_.jpg"
     },
     {
@@ -1593,6 +1628,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2025,
+      "summary": "Héctor García and Francesc Miralles explore the Japanese idea of ikigai, a reason for being. Drawing on interviews in Okinawa, a region known for long lives, they describe habits of purpose, community, movement and flow.",
       "cover": "https://m.media-amazon.com/images/I/81l3rZK4lnL._SL1500_.jpg"
     },
     {
@@ -1630,6 +1666,7 @@ window.SHELF = {
       ],
       "year": 2009,
       "readYear": 2025,
+      "summary": "Margaret Kovach explains how Indigenous knowledge systems can shape research. She describes a methodology grounded in Indigenous epistemologies, with story, relationship and reflexivity at its centre.",
       "cover": "https://m.media-amazon.com/images/I/91E7Ksdy3OL._SL1500_.jpg"
     },
     {
@@ -1667,7 +1704,7 @@ window.SHELF = {
       ],
       "year": 2022,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Yale lecturer Zoe Chance describes ethical influence as a skill anyone can learn. Drawing on behavioural science, she gives practical advice on asking for what you want, negotiating and leading with integrity.",
       "cover": "https://tse1.mm.bing.net/th/id/OIP.sLg3h6ZrhSoXGTkRJrveeQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
@@ -1706,7 +1743,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "A summary of the book by Basecamp founders Jason Fried and David Heinemeier Hansson. They argue that long hours, constant interruptions and manufactured urgency are choices, and describe how to build a calm, sustainable company.",
       "cover": "https://m.media-amazon.com/images/I/81Ptg3w2FvL._SL1500_.jpg"
     },
     {
@@ -1744,7 +1781,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "A summary of Michael Eric Dyson's JAY-Z: Made in America. It condenses Dyson's study of Jay-Z as a poet, hustler and cultural figure, from the Marcy Houses in Brooklyn to the heights of music and business.",
       "cover": "https://m.media-amazon.com/images/I/81amYY0-DsL._SL1500_.jpg"
     },
     {
@@ -1763,6 +1800,7 @@ window.SHELF = {
       ],
       "year": 1995,
       "readYear": 2025,
+      "summary": "A memory-training programme by Kevin Trudeau that teaches association and visualisation techniques. It claims to help readers remember names, numbers, lists and facts more easily.",
       "cover": "https://m.media-amazon.com/images/I/61B+qIzBlKL._SL1360_.jpg"
     },
     {
@@ -1780,6 +1818,7 @@ window.SHELF = {
       ],
       "year": 1984,
       "readYear": 2025,
+      "summary": "David Kolb's questionnaire for identifying your preferred learning style, based on his experiential learning cycle of experience, reflection, thinking and doing.",
       "cover": "https://www.simplypsychology.org/wp-content/uploads/AdobeStock_505355892-1-1024x1007.jpeg"
     },
     {
@@ -1815,7 +1854,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Barbara Oakley and Olav Schewe give a short, practical guide to learning more effectively. Topics include beating procrastination, focusing, remembering, reading and taking notes, and preparing for tests.",
       "cover": "https://covers.openlibrary.org/b/olid/OL30537112M-L.jpg"
     },
     {
@@ -1853,7 +1892,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Danny Iny argues that traditional higher education is failing to prepare people for a changing economy. He makes the case for focused, outcome-based online learning and describes how to build effective courses.",
       "cover": "https://covers.openlibrary.org/b/olid/OL27790730M-L.jpg"
     },
     {
@@ -2156,6 +2195,7 @@ window.SHELF = {
       ],
       "year": 2014,
       "readYear": 2026,
+      "summary": "Kate Hartman's beginner's guide to building circuits you can wear. Projects introduce sensors, conductive materials and soft circuits for interactive clothing and accessories.",
       "cover": "https://m.media-amazon.com/images/I/71lFuuMMxmL._SL1314_.jpg"
     },
     {
@@ -2175,7 +2215,7 @@ window.SHELF = {
       ],
       "year": 2014,
       "readYear": 2025,
-      "summary": "<!-- No more than a couple paragraphs summarizing my thoughts -->",
+      "summary": "<!-- No more than a couple paragraphs summarizing my thoughts -->.",
       "cover": "https://m.media-amazon.com/images/I/31o119ZNaBL._SY445_SX342_FMwebp_.jpg"
     },
     {
@@ -2211,7 +2251,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Cathy Moore introduces action mapping, a way to design workplace training around what people need to do rather than what they need to know. The book walks through each step with examples, to avoid information dumps.",
       "cover": "https://covers.openlibrary.org/b/olid/OL30547946M-L.jpg"
     },
     {
@@ -2272,6 +2312,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "A short paper introducing mixed-methods research, which combines quantitative and qualitative data in one study. It outlines the main designs and when each is useful.",
       "cover": "assets/covers/mixed-methods.png"
     },
     {
@@ -2327,7 +2368,7 @@ window.SHELF = {
       ],
       "year": 2011,
       "readYear": 2026,
-      "summary": "The blockbuster phenomenon that charts an amazing journey of the mind while revolutionizing our concept of memory “Highly entertaining.” —Adam Gopnik, The New Yorker “Funny, curious, erudite, and full of useful details about ancient techniques of training memory.” —The Boston Globe An instant bestseller that has now become a classic, Moonwalking with Einstein recounts Joshua Foer's yearlong quest to improve his memory under the tutelage of top \"mental athletes.\" He draws on cutting-edge research, a surprising cultural history of remembering, and venerable tricks of the mentalist's trade to…",
+      "summary": "The blockbuster phenomenon that charts an amazing journey of the mind while revolutionizing our concept of memory. “Highly entertaining.” —Adam Gopnik, The New Yorker. “Funny, curious, erudite, and full of useful details about ancient techniques of training memory.” —The Boston Globe. An instant bestseller that has now become a classic, Moonwalking with Einstein recounts Joshua Foer's yearlong quest to improve his memory under the tutelage of top \"mental athletes.\" He draws on cutting-edge research, a surprising cultural history of remembering, and venerable tricks of the mentalist's trade…",
       "cover": "https://m.media-amazon.com/images/I/61J78mwTSnL._SL1500_.jpg"
     },
     {
@@ -2364,6 +2405,7 @@ window.SHELF = {
       ],
       "year": 1971,
       "readYear": 2026,
+      "summary": "A letter from the late Mr Rafiel asks Miss Marple to investigate an unnamed crime, with a generous legacy if she succeeds. A coach tour of country houses and gardens slowly reveals an old injustice and a dangerous love.",
       "cover": "https://m.media-amazon.com/images/I/719b820kPYL._SL1500_.jpg"
     },
     {
@@ -2404,7 +2446,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Written at nearly a hundred, James Lovelock, creator of the Gaia hypothesis, predicts the end of the human-led Anthropocene. He imagines a new age in which super-intelligent machines become partners in keeping Earth habitable.",
       "cover": "https://covers.openlibrary.org/b/olid/OL28027133M-L.jpg"
     },
     {
@@ -2441,6 +2483,7 @@ window.SHELF = {
       ],
       "year": 2015,
       "readYear": 2025,
+      "summary": "Advertising creative Dave Trott explains how creativity comes from combining existing ideas in new ways. Short, punchy stories from history, business and advertising illustrate how to think differently.",
       "cover": "https://m.media-amazon.com/images/I/71nP9zJby0L._SL1500_.jpg"
     },
     {
@@ -2476,6 +2519,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2025,
+      "summary": "A short publication examining power dynamics in participatory design and research. It reflects on who holds decision-making power when communities are invited to take part.",
       "cover": "https://images.squarespace-cdn.com/content/v1/556f83d9e4b03651f87022f7/1526137261839-HWMZQM10LXXZM66K81VW/Qazi_Power+and+Participation_2.jpg"
     },
     {
@@ -2627,6 +2671,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "A large reference collection of short chapters on methods that cross disciplinary boundaries. It covers creative, digital and participatory approaches to research in the social sciences and humanities.",
       "cover": "https://m.media-amazon.com/images/I/81iSAkwqP4L._SL1500_.jpg"
     },
     {
@@ -2677,6 +2722,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "A guide to planning effective training and teaching sessions. It covers setting objectives, structuring content, choosing activities and evaluating learning.",
       "cover": "https://i.pinimg.com/736x/27/e8/50/27e8504f0d6560532f82a722714f62e0.jpg"
     },
     {
@@ -2697,6 +2743,7 @@ window.SHELF = {
       ],
       "year": 2014,
       "readYear": 2025,
+      "summary": "Austin Kleon's short guide to sharing your creative process openly. He suggests ways to share something small every day, teach what you know, and build an audience without self-promotion.",
       "cover": "https://m.media-amazon.com/images/I/615i7JSSShL._SL1400_.jpg"
     },
     {
@@ -2738,6 +2785,7 @@ window.SHELF = {
       ],
       "year": 1976,
       "readYear": 2026,
+      "summary": "A young bride buys a house in Devon that feels strangely familiar, then has a terrifying memory of a woman lying dead in its hall. With Miss Marple's help she digs into a murder committed nearly twenty years earlier. Christie's final Marple novel.",
       "cover": "https://m.media-amazon.com/images/I/71nC4zRdX6L._SL1500_.jpg"
     },
     {
@@ -2758,6 +2806,7 @@ window.SHELF = {
       ],
       "year": 2012,
       "readYear": 2025,
+      "summary": "Cal Newport challenges the advice to follow your passion. He argues that people come to love their work by building rare and valuable skills, which earn them autonomy, mastery and meaning.",
       "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360564614l/13525945.jpg"
     },
     {
@@ -2776,6 +2825,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2025,
+      "summary": "Physicist Sean Carroll argues that quantum mechanics is incomplete without the Many-Worlds interpretation. He explains why the universe may constantly branch into parallel versions, and what that means for reality and for us.",
       "cover": "https://m.media-amazon.com/images/I/810LfjqYgHL._SL1500_.jpg"
     },
     {
@@ -2794,6 +2844,7 @@ window.SHELF = {
       ],
       "year": 2022,
       "readYear": 2025,
+      "summary": "A visual guide to writing prompts for Stable Diffusion, the open-source AI image generator. It shows how styles, artists, lighting and composition keywords shape the images the model creates.",
       "cover": "https://m.media-amazon.com/images/I/71inWX25-EL._SL1500_.jpg"
     },
     {
@@ -2810,6 +2861,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "A practical guide to stress for professional caregivers such as nurses. It looks at common pressures, including patient satisfaction demands, workplace conflict and clashing home and work responsibilities, and offers ways to cope and prevent burnout.",
       "cover": "https://m.media-amazon.com/images/I/812YIY2SKdL._SL1500_.jpg"
     },
     {
@@ -2851,6 +2903,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "A guide from the University of Calgary's Taylor Institute on writing a teaching philosophy statement and assembling a teaching dossier, with prompts, examples and advice for documenting teaching practice.",
       "cover": "https://taylorinstitute.ucalgary.ca/sites/default/files/styles/ucws_image_desktop/public/2023-12/MicrosoftTeams-image%20%287%29.webp?itok=BkgxumeQ"
     },
     {
@@ -2869,6 +2922,7 @@ window.SHELF = {
       ],
       "year": 2013,
       "readYear": 2025,
+      "summary": "Larry Keeley and colleagues at Doblin describe ten kinds of innovation, from profit model to customer engagement. They argue that combining several types is more likely to succeed than product innovation alone.",
       "cover": "https://m.media-amazon.com/images/I/81KyAOHjUHL._SL1500_.jpg"
     },
     {
@@ -2904,7 +2958,7 @@ window.SHELF = {
       ],
       "year": 1992,
       "readYear": 2026,
-      "summary": "Chapman explains that the five languages of love are: - Words of affirmation - Quality Time - Receiving Gifts - Acts of Service - Physical Touch Because a fundamental fact of life is that people—usually partners in a relationship—speak different love languages, understanding what a spouse or partner needs to fulfill them emotionally is crucial to staying together.",
+      "summary": "Chapman explains that the five languages of love are: Words of affirmation. Quality Time. Receiving Gifts. Acts of Service. Physical Touch. Because a fundamental fact of life is that people—usually partners in a relationship—speak different love languages, understanding what a spouse or partner needs to fulfill them emotionally is crucial to staying together.",
       "cover": "https://covers.openlibrary.org/b/olid/OL921603M-L.jpg"
     },
     {
@@ -2942,7 +2996,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Heather McGowan and Chris Shipley argue that as automation transforms work, people need to stop defining themselves by their job titles. They describe how individuals and organisations can build the capacity to keep adapting.",
       "cover": "https://m.media-amazon.com/images/I/81aNofq0h3L._SL1500_.jpg"
     },
     {
@@ -2961,7 +3015,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2025,
-      "summary": "- Always wanted to read a wuxia in a graphic format, - the first episode was clean and sharp - mystery & a bit of action - self-discovery",
+      "summary": "Always wanted to read a wuxia in a graphic format. The first episode was clean and sharp. Mystery & a bit of action. Self-discovery.",
       "cover": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/10/the-adept-cover-art-exclusive.jpg"
     },
     {
@@ -2982,7 +3036,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2025,
-      "summary": "Making money and being happy are skills. At heart, they’re both about making good decisions. Whether you’re talking about your time or money, you need to avoid bad investments. That means trusting your gut. If you can’t decide, say no. Remember that good investments are compounded – they yield outsized returns. This is just as true of capital as it is of reputation. Happiness, meanwhile, is a decision to _be_ in the moment and turn the volume of your monkey mind down a notch. The best way of doing that? Meditation. Actionable advice: <mark style=\"background: #FFF3A3A6;\">Lean into…",
+      "summary": "Making money and being happy are skills. At heart, they’re both about making good decisions. Whether you’re talking about your time or money, you need to avoid bad investments. That means trusting your gut. If you can’t decide, say no. Remember that good investments are compounded – they yield outsized returns. This is just as true of capital as it is of reputation. Happiness, meanwhile, is a decision to be in the moment and turn the volume of your monkey mind down a notch. The best way of doing that? Meditation.. Actionable advice: <mark style=\"background: #FFF3A3A6;\">Lean into short-term…",
       "cover": "https://m.media-amazon.com/images/I/41VHLrvE0rL._SL1400_.jpg"
     },
     {
@@ -3004,7 +3058,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2025,
-      "summary": "- your everyday self is struggling. But there’s another you that _is_ ready for the challenge – your Alter Ego. - When it’s time to perform, to face your fears, or to chase your goals, your alter ego can be your secret weapon. You may not yet know the exact Identity of your alter ego – it could be Wonder Woman, Muhammad Ali, or a powerful animal. But once you identify and embody this character, you’ll be able to reach your full potential.",
+      "summary": "Your everyday self is struggling. But there’s another you that is ready for the challenge – your Alter Ego. When it’s time to perform, to face your fears, or to chase your goals, your alter ego can be your secret weapon. You may not yet know the exact Identity of your alter ego – it could be Wonder Woman, Muhammad Ali, or a powerful animal. But once you identify and embody this character, you’ll be able to reach your full potential.",
       "cover": "https://m.media-amazon.com/images/I/71UUS1tnmGL._SL1500_.jpg"
     },
     {
@@ -3025,6 +3079,7 @@ window.SHELF = {
       ],
       "year": 2001,
       "readYear": 2025,
+      "summary": "Robert Greene studies seduction as a form of power, drawing on historical figures and literature. He describes character types and strategies people have used to charm and persuade others.",
       "cover": "https://m.media-amazon.com/images/I/31dNVIuxgzL._SY445_SX342_FMwebp_.jpg"
     },
     {
@@ -3043,6 +3098,7 @@ window.SHELF = {
       ],
       "year": 1942,
       "readYear": 2026,
+      "summary": "The Bantrys wake to find the body of a glamorous young stranger on their library hearthrug. Miss Marple follows the trail from a quiet village to a seaside hotel to work out who the girl was and why she died.",
       "cover": "https://m.media-amazon.com/images/I/71LVPaqwweL._SL1500_.jpg"
     },
     {
@@ -3078,6 +3134,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "Flora Steele runs a bookshop in a sleepy Sussex village in the 1950s. When a body turns up among the shelves, she and her friend Jack Carrington start asking the questions the police won't.",
       "cover": "https://m.media-amazon.com/images/I/717qR1aombS._SL1360_.jpg"
     },
     {
@@ -3096,7 +3153,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
-      "summary": "- The benefits of edducation are vastly overstated. a lot of what we study in school is utterly irrelevent, and a lot of expensive schooling only hepls us to win futile status games. Although there are some simple reforms we could make to tackle these problems, the political will doesnt currently exist.",
+      "summary": "The benefits of edducation are vastly overstated. a lot of what we study in school is utterly irrelevent, and a lot of expensive schooling only hepls us to win futile status games. Although there are some simple reforms we could make to tackle these problems, the political will doesnt currently exist..",
       "cover": "https://m.media-amazon.com/images/I/91Q-6K4EHFL._SL1500_.jpg"
     },
     {
@@ -3156,6 +3213,7 @@ window.SHELF = {
       ],
       "year": 2010,
       "readYear": 2025,
+      "summary": "Darren Hardy argues that small, smart choices made consistently over time produce dramatic results. He describes how habits, routines and momentum add up, for better or worse, in health, money and relationships.",
       "cover": "https://m.media-amazon.com/images/I/71nAPgrH3aL._SL1500_.jpg"
     },
     {
@@ -3173,7 +3231,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2026,
-      "summary": "Most books on AI focus on the future of work. But now that algorithms can learn and adapt, does the future of creativity also belong to well-programmed machines? To answer this question, Marcus du Sautoy takes us to the forefront of creative new technologies and offers a more positive and unexpected vision of our future cohabitation with machines.--",
+      "summary": "Most books on AI focus on the future of work. But now that algorithms can learn and adapt, does the future of creativity also belong to well-programmed machines? To answer this question, Marcus du Sautoy takes us to the forefront of creative new technologies and offers a more positive and unexpected vision of our future cohabitation with machines.--.",
       "cover": "https://covers.openlibrary.org/b/olid/OL27336997M-L.jpg"
     },
     {
@@ -3213,6 +3271,7 @@ window.SHELF = {
       ],
       "year": 2013,
       "readYear": 2025,
+      "summary": "Don Norman explains why so many everyday objects are confusing to use and how good design communicates clearly. A foundational text on affordances, signifiers, feedback and human-centred design, revised and expanded.",
       "cover": "https://m.media-amazon.com/images/I/518TDcSwJiL._SL1340_.jpg"
     },
     {
@@ -3232,6 +3291,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "Michael Lewrick, Patrick Link and Larry Leifer present a visual, practical guide to applying design thinking in organisations. It follows a fictional team through the process and adds tools, tips and expert interviews.",
       "cover": "https://m.media-amazon.com/images/I/81Jlyd43wrL._SL1500_.jpg"
     },
     {
@@ -3267,6 +3327,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "Kevin Simler and Robin Hanson argue that many human behaviours, from laughter to charity to education, are driven by hidden selfish motives we prefer not to admit. They examine how this self-deception shapes everyday life and institutions.",
       "cover": "https://m.media-amazon.com/images/I/71HFALeYULL._SL1500_.jpg"
     },
     {
@@ -3284,7 +3345,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "A guide to using the Enneagram personality system in professional life. It describes the nine types and how understanding them can improve self-awareness, teamwork, communication and leadership.",
       "cover": "https://covers.openlibrary.org/b/olid/OL34962629M-L.jpg"
     },
     {
@@ -3302,7 +3363,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Annie Murphy Paul shows how people think better by using resources beyond the brain: their bodies, physical spaces and other people. She draws on research to suggest practical ways of thinking outside the head.",
       "cover": "https://covers.openlibrary.org/b/olid/OL35293012M-L.jpg"
     },
     {
@@ -3358,6 +3419,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "A resource from Future School on future-ready education, exploring how learning and teaching can prepare students for a changing world.",
       "cover": ""
     },
     {
@@ -3377,7 +3439,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2025,
-      "summary": "<!-- No more than a couple paragraphs summarizing my thoughts -->",
+      "summary": "<!-- No more than a couple paragraphs summarizing my thoughts -->.",
       "cover": "https://m.media-amazon.com/images/I/81PcKpmUHRL._SL1500_.jpg"
     },
     {
@@ -3396,6 +3458,7 @@ window.SHELF = {
       ],
       "year": 2010,
       "readYear": 2025,
+      "summary": "Researcher Brené Brown offers ten guideposts for what she calls wholehearted living. She encourages readers to let go of who they think they should be and embrace who they are, with courage and self-compassion.",
       "cover": "https://m.media-amazon.com/images/I/61pEljvVxcL._SL1500_.jpg"
     },
     {
@@ -3490,6 +3553,7 @@ window.SHELF = {
       ],
       "year": 2004,
       "readYear": 2025,
+      "summary": "Masaru Emoto claims that human words, music and intentions change the crystals that water forms when frozen. Illustrated with photographs of ice crystals, the book presents his ideas about water, consciousness and wellbeing.",
       "cover": "https://m.media-amazon.com/images/I/81FUKQDSu8L._SL1500_.jpg"
     },
     {
@@ -3526,6 +3590,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2026,
+      "summary": "A group of old university friends gather for New Year at a remote Scottish lodge cut off by snow. By the end of the holiday one of them is dead, and the story moves between narrators as old resentments surface.",
       "cover": "https://m.media-amazon.com/images/I/81k4fqWdFYL._SL1500_.jpg"
     },
     {
@@ -3666,7 +3731,7 @@ window.SHELF = {
       ],
       "year": 2022,
       "readYear": 2025,
-      "summary": "The Metaverse is no longer just a place for kids and gamers; it’s evolving into a market that will encompass most sectors. Both it and its user technology are still being developed, but this gives you time to learn, strategize about how you can adapt your products, and rethink your marketing campaigns so that you can position yourself at the forefront of the Metaverse marketplace.",
+      "summary": "The Metaverse is no longer just a place for kids and gamers; it’s evolving into a market that will encompass most sectors. Both it and its user technology are still being developed, but this gives you time to learn, strategize about how you can adapt your products, and rethink your marketing campaigns so that you can position yourself at the forefront of the Metaverse marketplace..",
       "cover": "https://m.media-amazon.com/images/I/61QQfGdqeeL.jpg"
     },
     {
@@ -3685,6 +3750,7 @@ window.SHELF = {
       ],
       "year": 1962,
       "readYear": 2026,
+      "summary": "A famous film star buys a house in St Mary Mead, and at her welcome party a local woman drinks a poisoned cocktail. Miss Marple suspects the poison was meant for someone else and studies the actress's frozen expression for the answer.",
       "cover": "https://m.media-amazon.com/images/I/715wqVtgEdL._SL1500_.jpg"
     },
     {
@@ -3723,6 +3789,7 @@ window.SHELF = {
       ],
       "year": 2018,
       "readYear": 2025,
+      "summary": "Jeff Haden argues that motivation is not a spark that comes before action but a result of it. He describes how small successes build momentum and how to set up routines that keep you moving toward big goals.",
       "cover": "https://m.media-amazon.com/images/I/71fmbtvWnZL._SL1500_.jpg"
     },
     {
@@ -3741,6 +3808,7 @@ window.SHELF = {
       ],
       "year": 1943,
       "readYear": 2026,
+      "summary": "Poison-pen letters spread suspicion through a quiet English village, and then a woman who received one is found dead. Miss Marple is called in to find the writer before the gossip turns into more murders.",
       "cover": "https://m.media-amazon.com/images/I/71ZY1HVGBdL._SL1500_.jpg"
     },
     {
@@ -3759,6 +3827,7 @@ window.SHELF = {
       ],
       "year": 1930,
       "readYear": 2026,
+      "summary": "The most disliked man in St Mary Mead is found shot in the vicar's study, and half the village had a reason to want him dead. The first full-length Miss Marple novel, in which she watches from her garden and sees more than the police.",
       "cover": "https://m.media-amazon.com/images/I/61upYa8x8dL._SL1500_.jpg"
     },
     {
@@ -3817,6 +3886,7 @@ window.SHELF = {
       ],
       "year": 1928,
       "readYear": 2026,
+      "summary": "An American heiress is murdered aboard the luxury Blue Train to the Riviera, and her famous rubies are missing. Hercule Poirot, travelling on the same train, sorts out a tangle of jewel thieves, estranged husbands and secret lovers.",
       "cover": "https://m.media-amazon.com/images/I/614xDy0XFhL._SL1500_.jpg"
     },
     {
@@ -3856,6 +3926,7 @@ window.SHELF = {
       ],
       "year": 2014,
       "readYear": 2025,
+      "summary": "Pierce J. Howard summarises brain research and applies it to everyday life. Topics include sleep, memory, learning, creativity, stress, personality and decision-making, organised as a practical reference.",
       "cover": "https://m.media-amazon.com/images/I/81W2KVjozEL._SL1500_.jpg"
     },
     {
@@ -3876,6 +3947,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "Catherine Price argues that true fun, the combination of playfulness, connection and flow, is vital to wellbeing. She suggests ways to cut screen time and make room for more joy in daily life.",
       "cover": "https://m.media-amazon.com/images/I/81Q70jA+1AL._SL1500_.jpg"
     },
     {
@@ -3893,7 +3965,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Career coach Ken Coleman argues that people find work they love by getting close to the right people and places. He explains how to build relationships and take small steps toward a meaningful career.",
       "cover": "https://covers.openlibrary.org/b/olid/OL27051985M-L.jpg"
     },
     {
@@ -3951,7 +4023,7 @@ window.SHELF = {
       ],
       "year": 2016,
       "readYear": 2025,
-      "summary": "'A mind-expanding tour of the world without leaving your paintbox. Every colour has a story, and here are some of the most alluring, alarming, and thought-provoking. Very hard painting the hallway magnolia after this inspiring primer.' Simon Garfield The Secret Lives of Colour tells the unusual stories of the 75 most fascinating shades, dyes and hues. From blonde to ginger, the brown that changed the way battles were fought to the white that protected against the plague, Picasso's blue period to the charcoal on the cave walls at Lascaux, acid yellow to kelly green, and from scarlet women…",
+      "summary": "'A mind-expanding tour of the world without leaving your paintbox. Every colour has a story, and here are some of the most alluring, alarming, and thought-provoking. Very hard painting the hallway magnolia after this inspiring primer.'. Simon Garfield. The Secret Lives of Colour tells the unusual stories of the 75 most fascinating shades, dyes and hues. From blonde to ginger, the brown that changed the way battles were fought to the white that protected against the plague, Picasso's blue period to the charcoal on the cave walls at Lascaux, acid yellow to kelly green, and from scarlet women…",
       "cover": "https://m.media-amazon.com/images/I/61Nyx49JzXL._SL1500_.jpg"
     },
     {
@@ -3992,6 +4064,7 @@ window.SHELF = {
       ],
       "year": 2013,
       "readYear": 2025,
+      "summary": "Heidi Hanna offers a brain-based approach to staying sharp under stress. She covers nutrition, movement, rest and mindset as ways to build mental energy and resilience at work.",
       "cover": "https://m.media-amazon.com/images/I/51s4VPoyS2L.jpg"
     },
     {
@@ -4072,6 +4145,7 @@ window.SHELF = {
       ],
       "year": 2015,
       "readYear": 2025,
+      "summary": "Rebecca Proctor presents examples of sustainable product and interior design. It covers materials, manufacturing and design approaches that reduce environmental impact, with designer profiles.",
       "cover": "https://m.media-amazon.com/images/I/51S94Dzk4kS._SL1000_.jpg"
     },
     {
@@ -4152,7 +4226,7 @@ window.SHELF = {
       ],
       "year": 1964,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "A collection of essays by Ayn Rand, with contributions from Nathaniel Branden, setting out her philosophy of Objectivism. Rand argues that rational self-interest is a moral virtue and criticises altruism as an ethical ideal.",
       "cover": "https://covers.openlibrary.org/b/olid/OL8106017M-L.jpg"
     },
     {
@@ -4171,6 +4245,7 @@ window.SHELF = {
       ],
       "year": 1952,
       "readYear": 2026,
+      "summary": "Miss Marple visits an old school friend at a Victorian mansion turned home for young delinquents, where tensions run high. When a guest is shot during a family quarrel, she realises the drama in front of everyone hid the real crime.",
       "cover": "https://m.media-amazon.com/images/I/7145DDxc8CL._SL1500_.jpg"
     },
     {
@@ -4189,6 +4264,7 @@ window.SHELF = {
       ],
       "year": 2011,
       "readYear": 2025,
+      "summary": "Nobel laureate Daniel Kahneman describes two modes of thinking: a fast, intuitive System 1 and a slow, deliberate System 2. He shows how biases in each shape our judgements about risk, money, happiness and much more.",
       "cover": "https://m.media-amazon.com/images/I/71f6DceqZAL._SL1500_.jpg"
     },
     {
@@ -4207,6 +4283,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2025,
+      "summary": "The ideation chapter of This is Service Design Doing. It describes how to prepare and run ideation sessions and methods for generating, selecting and building on ideas.",
       "cover": "https://m.media-amazon.com/images/I/61UNxMT6OjL._SL1024_.jpg"
     },
     {
@@ -4225,6 +4302,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2025,
+      "summary": "A companion to the ideation chapter of This is Service Design Doing, with methods and templates for planning and facilitating ideation sessions.",
       "cover": "https://m.media-amazon.com/images/I/61UNxMT6OjL._SL1024_.jpg"
     },
     {
@@ -4243,6 +4321,7 @@ window.SHELF = {
       ],
       "year": 2017,
       "readYear": 2025,
+      "summary": "Marc Stickdorn and co-authors offer a hands-on guide to service design in practice. It covers research, ideation, prototyping and implementation, with methods, case studies and advice on embedding service design in organisations.",
       "cover": "https://m.media-amazon.com/images/I/61UNxMT6OjL._SL1024_.jpg"
     },
     {
@@ -4263,6 +4342,7 @@ window.SHELF = {
       ],
       "year": 2012,
       "readYear": 2025,
+      "summary": "Marc Stickdorn and Jakob Schneider's introduction to service design. Contributors explain its principles, tools and case studies, from customer journey maps to service blueprints.",
       "cover": "https://m.media-amazon.com/images/I/61UNxMT6OjL._SL1024_.jpg"
     },
     {
@@ -4299,6 +4379,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2025,
+      "summary": "Edited by Kat Jungnickel, this collection explores creative ways of making and sharing research beyond the written text. It presents tactics such as making objects, performances and media as part of critical inquiry.",
       "cover": "https://m.media-amazon.com/images/I/61Th0Z5SOrL._SL1500_.jpg"
     },
     {
@@ -4360,6 +4441,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "Barbara Oakley, Beth Rogowsky and Terrence Sejnowski explain what neuroscience says about how students learn. They offer teachers practical strategies for in-person and online classrooms.",
       "cover": "https://m.media-amazon.com/images/I/71lt-QLaDgL._SL1500_.jpg"
     },
     {
@@ -4380,6 +4462,7 @@ window.SHELF = {
       ],
       "year": 2016,
       "readYear": 2025,
+      "summary": "Simon King and Kuen Chang explain the principles behind good industrial design, including sensorial, simple, enduring, playful, thoughtful, sustainable and beautiful. Examples show how they shape everyday products.",
       "cover": "https://m.media-amazon.com/images/I/71psMWKD3mL._SL1500_.jpg"
     },
     {
@@ -4399,6 +4482,7 @@ window.SHELF = {
       ],
       "year": 2019,
       "readYear": 2025,
+      "summary": "Bruce Hanington and Bella Martin's reference of 125 research and design methods. Each method gets a concise, illustrated explanation of what it is and when to use it.",
       "cover": "https://m.media-amazon.com/images/I/81ng72XaQzL._SL1500_.jpg"
     },
     {
@@ -4417,6 +4501,7 @@ window.SHELF = {
       ],
       "year": 2022,
       "readYear": 2025,
+      "summary": "Memory champion Kevin Horsley shares techniques for remembering more and learning faster. He explains how to focus, use visualisation and association, and apply memory methods to names, numbers and study.",
       "cover": "https://m.media-amazon.com/images/I/61gwQznM-ZL._SL1360_.jpg"
     },
     {
@@ -4455,6 +4540,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2025,
+      "summary": "Luke Burgis introduces René Girard's theory of mimetic desire, the idea that we want things because others want them. He shows how imitation shapes markets, careers and relationships, and how to want more freely.",
       "cover": "https://m.media-amazon.com/images/I/71aiMxfJmAL._SL1500_.jpg"
     },
     {
@@ -4513,7 +4599,7 @@ window.SHELF = {
       ],
       "year": 2020,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Dan Sullivan and Benjamin Hardy argue that, instead of asking how to do something, you should ask who can help. They describe how collaborating with the right people frees time and multiplies results.",
       "cover": "https://covers.openlibrary.org/b/olid/OL29507683M-L.jpg"
     },
     {
@@ -4566,7 +4652,7 @@ window.SHELF = {
       ],
       "year": 2022,
       "readYear": 2026,
-      "summary": "No description available.",
+      "summary": "Neuroscientist Stephanie Cacioppo combines her research on the brain science of love with the story of her own marriage and loss. She explains why social connection is a biological need.",
       "cover": "https://covers.openlibrary.org/b/olid/OL34161954M-L.jpg"
     },
     {
@@ -4646,6 +4732,7 @@ window.SHELF = {
       ],
       "year": 1984,
       "readYear": 2025,
+      "summary": "Louise Hay presents her belief that thoughts and self-talk shape health and happiness. She offers affirmations and exercises aimed at self-acceptance and letting go of negative patterns.",
       "cover": "https://m.media-amazon.com/images/I/81nZQGjg+wL._SL1500_.jpg"
     },
     {
@@ -4666,7 +4753,7 @@ window.SHELF = {
       ],
       "year": 2021,
       "readYear": 2026,
-      "summary": "- Seventeen-year-old Julie Clarke is devastated after her boyfriend Sam Obayashi is killed in a car accident on his way to pick her up. - Unable to cope, Julie skips Sam's funeral, discards his belongings, and tries to erase every reminder of him. - One night, desperate to hear his voice, she calls Sam's cell phone expecting voicemail — but Sam picks up. - Sam speaks to her from somewhere beyond, though neither can explain how or why the connection exists. - Julie clings to these calls, falling in love with him all over again, while keeping the miraculous connection a secret from friends…",
+      "summary": "Seventeen-year-old Julie Clarke is devastated after her boyfriend Sam Obayashi is killed in a car accident on his way to pick her up. Unable to cope, Julie skips Sam's funeral, discards his belongings, and tries to erase every reminder of him. One night, desperate to hear his voice, she calls Sam's cell phone expecting voicemail — but Sam picks up. Sam speaks to her from somewhere beyond, though neither can explain how or why the connection exists. Julie clings to these calls, falling in love with him all over again, while keeping the miraculous connection a secret from friends and family.…",
       "cover": "https://m.media-amazon.com/images/I/81Vr8bJrqBL._SL1500_.jpg"
     }
   ]
