@@ -11,7 +11,7 @@ pip install pyyaml
 python tools/build_books.py
 ```
 
-Two settings at the top of `tools/build_books.py` shape the site without touching your notes: `EXCLUDE_SERIES` (currently Goosebumps) leaves whole series off, and `FORCE_STATUS` (currently `"read"`) shows every book as read. Set `FORCE_STATUS = None` to use each note's own status, and the status filter reappears on its own. `HERO_BOOKS` lists the six covers in the hero collage, by book id, in slot order; leave it empty for a daily random six.
+Two settings at the top of `tools/build_books.py` shape the site without touching your notes: `EXCLUDE_SERIES` (currently Goosebumps) leaves whole series off, `EXCLUDE_AUTHORS` (currently K.F. Breene) leaves an author's books off, and `FORCE_STATUS` (currently `"read"`) shows every book as read. Set `FORCE_STATUS = None` to use each note's own status, and the status filter reappears on its own. `HERO_BOOKS` lists the six covers in the hero collage, by book id, in slot order; leave it empty for a daily random six.
 
 Then commit and push. Status mapping when not forced: `read`/`completed` show as Read, `started` as Reading now, `triage`/`to-read` as To read. A non-empty `feature` makes a book a Top pick.
 

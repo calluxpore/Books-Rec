@@ -40,6 +40,14 @@ IMG_EXT = (".jpg", ".jpeg", ".png", ".webp", ".avif")
 
 # Site-only rules. Your Obsidian notes are never changed.
 EXCLUDE_SERIES = {"goosebumps"}   # series to leave off the site (lowercase)
+
+
+def norm_name(s):
+    """'K.F. Breene', 'KF Breene', 'k. f. breene' all become 'kfbreene'."""
+    return re.sub(r"[^a-z]", "", str(s).lower())
+
+
+EXCLUDE_AUTHORS = {norm_name(a) for a in ["K.F. Breene"]}   # authors to leave off the site
 FORCE_STATUS = "read"             # show every book as this status; set to None to use each note's status
 
 # Covers shown in the hero collage, in slot order (book ids from js/books.js):
@@ -50,7 +58,7 @@ HERO_BOOKS = [
     "harry-potter-and-the-philosophers-stone",
     "the-abc-murders",
     "a-murder-is-announced",
-    "ai-engineering-building-applications-with-foundation-models",
+    "dumb-witness",
     "the-mussoorie-murders-by-divyaroop-bhatnagar",
 ]
 
@@ -158,7 +166,8 @@ def build(src):
     for p in notes:
         fm, body = read_note(p)
         title = p.stem  # the base lists file.name, so the file name is the title
-        if str(clean(fm.get("series")) or "").lower() in EXCLUDE_SERIES:
+        authors = {norm_name(a) for a in as_list(fm.get("author"))}
+        if str(clean(fm.get("series")) or "").lower() in EXCLUDE_SERIES or authors & EXCLUDE_AUTHORS:
             skipped.append(title)
             continue
         book_id = slug(title)
@@ -250,7 +259,7 @@ if __name__ == "__main__":
     src = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_SRC
     notes, books, report = build(src)
     from collections import Counter
-    print(f"Notes found: {len(notes)}   Skipped (excluded series): {len(report['skipped'])}   Books written: {len(books)}")
+    print(f"Notes found: {len(notes)}   Skipped (excluded series or author): {len(report['skipped'])}   Books written: {len(books)}")
     print("Status:", dict(Counter(b["status"] for b in books)))
     print("Covers from assets/covers:", len(report["local"]), "  Books without a description:", len(report["no_summary"]))
     for k in ("copied", "no_cover", "missing_image", "no_summary"):

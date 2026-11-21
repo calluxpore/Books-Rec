@@ -292,6 +292,7 @@
 
     next.forEach((b, i) => cols[shortest()].insertAdjacentHTML("beforeend", pinHTML(b, shown + i)));
     shown += next.length;
+    watchReveal($("[data-masonry]"));
     if (shown >= current.length) settle();
     $("[data-sentinel]").hidden = shown >= current.length;
     busy = false;
@@ -385,6 +386,7 @@
           ${sameAuthor ? `<button class="btn btn--secondary" type="button" data-more="${esc(b.author)}">More by ${esc(b.author)}</button>` : ""}
         </div>
       </div>`;
+    if (smooth) smooth.stop();
     sheet.showModal();
     history.replaceState(null, "", "#book/" + encodeURIComponent(b.id));
   }
@@ -407,8 +409,95 @@
     }
   });
 
+  /* ───────── smooth scrolling ───────── */
+  // Inertial wheel scrolling: each wheel tick moves a target; the page eases toward it every frame.
+  // Off for touch screens (already smooth) and for people who prefer reduced motion.
+  // Keyboard, scrollbar drags and the book dialog keep native scrolling.
+  const smooth = (() => {
+    const fine = matchMedia("(pointer: fine)").matches;
+    if (reduceMotion || !fine) return null;
+    const root = document.documentElement;
+    root.classList.add("has-smooth-scroll");
+    let target = scrollY, pos = scrollY, running = false, last = 0;
+    const max = () => root.scrollHeight - innerHeight;
+    const clamp = (v) => Math.max(0, Math.min(max(), v));
+    const STRENGTH = 0.11; // share of the remaining distance covered per 60fps frame
+
+    function frame(now) {
+      if (!running) return;
+      // Something else moved the page mid-glide (scrollbar drag, keys, a jump): hand control back.
+      if (Math.abs(scrollY - pos) > 3) { running = false; pos = target = scrollY; return; }
+      const dt = Math.min(64, now - last || 16.7);
+      last = now;
+      const k = 1 - Math.pow(1 - STRENGTH, dt / 16.7); // frame-rate independent easing
+      pos += (target - pos) * k;
+      if (Math.abs(target - pos) < 0.4) pos = target;
+      window.scrollTo({ top: pos, behavior: "instant" });
+      if (pos !== target) requestAnimationFrame(frame);
+      else running = false;
+    }
+    function start() {
+      if (running) return;
+      running = true;
+      last = performance.now();
+      requestAnimationFrame(frame);
+    }
+
+    addEventListener("wheel", (e) => {
+      if (e.ctrlKey || e.defaultPrevented) return;                     // pinch-zoom
+      if (document.querySelector("dialog[open]")) return;              // dialog scrolls itself
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;             // sideways (genre row)
+      if (e.target.closest && e.target.closest("select")) return;
+      e.preventDefault();
+      let dy = e.deltaY;
+      if (e.deltaMode === 1) dy *= 40;            // lines
+      else if (e.deltaMode === 2) dy *= innerHeight; // pages
+      if (!running) pos = target = scrollY;
+      target = clamp(target + dy);
+      start();
+    }, { passive: false });
+
+    // Anything else that scrolls the page (keys, scrollbar, find-in-page) resets our position.
+    addEventListener("scroll", () => {
+      if (!running) pos = target = scrollY;
+    }, { passive: true });
+
+    return {
+      to(y) { pos = scrollY; target = clamp(y); start(); },
+      stop() { running = false; pos = target = scrollY; }
+    };
+  })();
+
+  // Scroll so an element sits just under the sticky top bar.
+  function scrollToEl(el, offset = 80) {
+    const y = el.getBoundingClientRect().top + scrollY - offset;
+    if (smooth) smooth.to(y);
+    else window.scrollTo({ top: y, behavior: reduceMotion ? "auto" : "smooth" });
+  }
+
+  /* ───────── card reveal on scroll ───────── */
+  // Cards rise and fade in when they enter the viewport, staggered left to right by column.
+  const revealer = "IntersectionObserver" in window && !reduceMotion
+    ? new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          e.target.classList.add("is-in");
+          revealer.unobserve(e.target);
+        });
+      }, { rootMargin: "0px 0px -6% 0px", threshold: 0.01 })
+    : null;
+  function watchReveal(root = document) {
+    $$(".pin:not(.is-in):not([data-watched])", root).forEach((pin) => {
+      pin.dataset.watched = "";
+      const col = pin.parentElement ? [...pin.parentElement.parentElement.children].indexOf(pin.parentElement) : 0;
+      pin.style.setProperty("--d", `${col * 70}ms`);
+      if (revealer) revealer.observe(pin);
+      else pin.classList.add("is-in");
+    });
+  }
+
   /* ───────── events ───────── */
-  const toFilters = () => $("#filters").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
+  const toFilters = () => scrollToEl($("#filters"));
 
   document.addEventListener("click", (e) => {
     const opener = e.target.closest("[data-open]");
@@ -473,7 +562,7 @@
   renderCollage();
   readURL();
   renderFilters();
-  renderFeed();
+  Promise.resolve(renderFeed()).then(() => watchReveal());
   stuck();
   addEventListener("load", () => { track().scrollTo({ left: 0, behavior: "instant" }); updateArrows(); });
   const m = location.hash.match(/^#book\/(.+)$/);
