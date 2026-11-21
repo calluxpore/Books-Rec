@@ -1,0 +1,81 @@
+{
+  "source": "https://www.pinterest.com/",
+  "pages_analyzed": ["https://www.pinterest.com/", "https://www.pinterest.com/ideas/"],
+  "tokens": {
+    "spacing": {
+      "scale": [4, 8, 16, 24, 64, 100],
+      "base_unit": 8
+    },
+    "typography": {
+      "families": ["Pin Sans"],
+      "scale": [
+        { "role": "display", "size": "70px", "weight": "900", "family": "Pin Sans" },
+        { "role": "section-heading", "size": "48px", "weight": "900", "letter_spacing": "-0.5px", "family": "Pin Sans" },
+        { "role": "feature-heading", "size": "38px", "weight": "700", "family": "Pin Sans" },
+        { "role": "h1", "size": "28px", "weight": "700", "letter_spacing": "-0.5px", "family": "Pin Sans" },
+        { "role": "subhead", "size": "20px", "weight": "400", "family": "Pin Sans" },
+        { "role": "nav / tabs / body", "size": "16px", "weight": "500", "family": "Pin Sans" },
+        { "role": "meta", "size": "12px", "weight": "400", "family": "Pin Sans" }
+      ]
+    },
+    "colors": [
+      { "role": "background", "value": "#FFFFFF" },
+      { "role": "text-primary", "value": "#000000" },
+      { "role": "text-primary-warm", "value": "#211922" },
+      { "role": "text-secondary", "value": "#62625B" },
+      { "role": "fill-secondary (search, secondary buttons)", "value": "#E5E5E0" },
+      { "role": "fill-subtle", "value": "#EFEFEF" },
+      { "role": "band-background", "value": "#F6F6F3" },
+      { "role": "accent (primary actions only)", "value": "#E60023" }
+    ],
+    "radius": ["8px", "12px", "16px", "32px", "50%"],
+    "shadows": ["0 3px 12px rgba(0,0,0,0.2)", "0 0 100px rgba(0,0,0,0.2)"],
+    "image_ratios": [
+      { "usage": "pin (masonry tile)", "ratio": "variable, 0.40:1 to 0.80:1 at fixed 236px width" },
+      { "usage": "carousel hero", "ratio": "1.90:1" },
+      { "usage": "feature", "ratio": "1.16:1" }
+    ],
+    "grid": {
+      "type": "masonry (independent columns)",
+      "column_width": "236px",
+      "gutter": "16px",
+      "columns_at_1440": 5,
+      "column_pitch": "252px"
+    },
+    "motion": [
+      "transform 0.085s ease-out (press)",
+      "transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) (overshoot pop)",
+      "color 0.3s cubic-bezier(0.8, 0, 0.2, 1)"
+    ]
+  },
+  "taste": [
+    {
+      "name": "Let the image be the card",
+      "trigger": "When designing a tile for content that is itself visual",
+      "decision": "Chose a bare image with a 16px radius over a framed card with border, background, padding and drop shadow",
+      "reason": "Because people scan by eye and every frame line is noise multiplied across dozens of tiles",
+      "evidence": ["pin box-shadow: none", "16px radius on every pin image", "only 2 shadows on page, both on floating UI"]
+    },
+    {
+      "name": "Keep the image's own height (masonry)",
+      "trigger": "When displaying images of mixed aspect ratios side by side",
+      "decision": "Chose fixed column width with free height over a uniform-ratio grid with cropping",
+      "reason": "Because cropping changes what people came to see, and staggered edges stop the page reading like a spreadsheet",
+      "evidence": ["all pins 236px wide", "heights 295/314/341/354/379/419/495/590px", "column x = 98/350/602/854/1106 (252px pitch, 16px gutter)"]
+    },
+    {
+      "name": "Red only for verbs",
+      "trigger": "When the brand owns a loud red",
+      "decision": "Chose to keep #E60023 off headings, links, borders and backgrounds, reserving it for primary actions, over spreading the brand colour across the chrome",
+      "reason": "Because the imagery already competes for attention, so the one saturated UI colour has to mean 'do this'",
+      "evidence": ["#E60023 at 0.6% of surface area", "headings #000 / #211922", "secondary buttons #E5E5E0"]
+    },
+    {
+      "name": "One typeface, contrast through weight",
+      "trigger": "When type must sit next to busy, colourful imagery",
+      "decision": "Chose a single sans in four weights over a display + body pairing",
+      "reason": "Because a characterful display face would fight the photos; big weight jumps give hierarchy without adding a second voice",
+      "evidence": ["1 family across 683/683 elements", "48px/900 with -0.5px tracking vs 16px/400 body", "nav and tabs 16px/500"]
+    }
+  ]
+}

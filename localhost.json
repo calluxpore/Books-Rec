@@ -1,0 +1,210 @@
+{
+  "source": "http://localhost:5173/",
+  "scope": "Filter bar + hero, and the bands around them. Reference taste: pinterest.com.json (homepage hero measured 2026-11-21)",
+  "tokens": {
+    "spacing": {
+      "scale": [
+        8,
+        12,
+        16,
+        24,
+        64
+      ],
+      "base_unit": 8
+    },
+    "typography": {
+      "families": [
+        "Figtree"
+      ],
+      "scale": [
+        {
+          "role": "hero",
+          "size": "48px",
+          "weight": "900",
+          "family": "Figtree"
+        },
+        {
+          "role": "feed-heading",
+          "size": "28px",
+          "weight": "700",
+          "family": "Figtree"
+        },
+        {
+          "role": "control",
+          "size": "14px",
+          "weight": "500",
+          "family": "Figtree"
+        },
+        {
+          "role": "count",
+          "size": "14px",
+          "weight": "400",
+          "family": "Figtree"
+        }
+      ]
+    },
+    "colors": [
+      {
+        "role": "background (dark)",
+        "value": "#111111"
+      },
+      {
+        "role": "chip fill (dark)",
+        "value": "#262625"
+      },
+      {
+        "role": "control fill (dark)",
+        "value": "#2E2E2C"
+      },
+      {
+        "role": "selected chip",
+        "value": "text colour on inverse (#FFFFFF dark / #000000 light)"
+      },
+      {
+        "role": "accent, actions only",
+        "value": "#E60023"
+      }
+    ],
+    "radius": [
+      "16px",
+      "20px",
+      "24px",
+      "50%"
+    ],
+    "shadows": [
+      "0 3px 12px rgba(0,0,0,0.2) (scroll arrows only)"
+    ],
+    "image_ratios": [
+      {
+        "usage": "pin",
+        "ratio": "natural, 236px column"
+      }
+    ],
+    "grid": {
+      "max_width": "var(--feed-w): masonry width, 1244px at 1440",
+      "columns": 5,
+      "gutter": "16px",
+      "measured_before": {
+        "topbar_edges": "16px / 1409px",
+        "content_edges": "91px / 1335px",
+        "control_heights": [
+          "48px",
+          "40px",
+          "36px",
+          "36px"
+        ],
+        "sticky_bar_height": "124px"
+      },
+      "target": {
+        "all_band_edges": "91px / 1335px",
+        "control_height": "40px",
+        "sticky_bar_height": "64px"
+      }
+    },
+    "hero": {
+      "measured_before": {
+        "height": "372px",
+        "alignment": "centred",
+        "images": 0,
+        "text_block": "377px-1049px",
+        "stat_pills": "4 x 36px",
+        "first_card_top": "627px"
+      },
+      "reference_pinterest": {
+        "container": "1140px at x=143",
+        "heading": "48px/900, -0.5px, 52.8px line-height, left-aligned, 2 lines",
+        "buttons": "48px, 16px radius, 8px gap, #E60023 + #E5E5E0",
+        "collage": "522x450px, 6 tiles, 2.2x size range, 2 tiles bleed off top"
+      },
+      "target": {
+        "layout": "two columns on the 91px/1335px content edges",
+        "collage": "6 real covers, one anchor, overlap, 2 bleed edges",
+        "buttons": "Browse the shelf (red) + Surprise me (grey), 48px, 16px radius",
+        "stats": "one 14px text line"
+      }
+    }
+  },
+  "taste": [
+    {
+      "name": "One column edge from top bar to last tile",
+      "trigger": "When a sticky header, filter bar and masonry stack vertically",
+      "decision": "Chose one shared left/right edge (the masonry width) over a full-bleed top bar above a centred content column",
+      "reason": "Because the eye runs down a shared edge; a 75px jog between bands reads as an accident",
+      "evidence": [
+        "logo left 16px vs content left 91px",
+        "search right 1345px vs content right 1335px"
+      ]
+    },
+    {
+      "name": "One control height per strip",
+      "trigger": "When chips, segment buttons, sort and arrows share a bar",
+      "decision": "Chose 40px for every control with aligned centres over per-control sizing",
+      "reason": "Because a shared height and centre line make separate parts read as one toolbar",
+      "evidence": [
+        "48 / 40 / 36 / 36px in one bar before",
+        "two rows with centres at 116px and 172px"
+      ]
+    },
+    {
+      "name": "Only show filters that can narrow the list",
+      "trigger": "When every book has the same status",
+      "decision": "Chose to remove the status control and the per-tile Read badge over keeping them for completeness",
+      "reason": "Because a filter that cannot change the result and a badge on every tile are noise people learn to skip",
+      "evidence": [
+        "Read 243 = All 243",
+        "Reading now 0, To read 0",
+        "Read badge on 243 of 243 tiles"
+      ]
+    },
+    {
+      "name": "One sticky row, not two",
+      "trigger": "When a filter bar stays pinned over a tall masonry feed",
+      "decision": "Chose genres and sort in one 64px row over a two-row 124px block",
+      "reason": "Because pinned height is taken from every screenful of covers, and covers are what people came to see",
+      "evidence": [
+        "124px sticky = 14% of a 900px viewport",
+        "one row = 64px = 7%"
+      ]
+    },
+    {
+      "name": "Let the shelf introduce itself",
+      "trigger": "When the hero is the first thing on a site made of book covers",
+      "decision": "Chose a collage of 6 real covers from the shelf over a headline-only banner",
+      "reason": "Because people judge in one glance whether a shelf matches their taste, and covers say that faster than any tagline",
+      "evidence": [
+        "0 images in the current hero",
+        "Pinterest gives 46% of its hero width to a 6-tile collage"
+      ]
+    },
+    {
+      "name": "One left edge from the headline down",
+      "trigger": "When the hero sits above a left-aligned feed",
+      "decision": "Chose a left-aligned text column on the 91px content edge over centred text",
+      "reason": "Because a centred island breaks the line people follow down the page; a shared edge carries them into the books",
+      "evidence": [
+        "centred text block 377-1049px vs content 91-1335px",
+        "Pinterest heading at x=143, its container edge"
+      ]
+    },
+    {
+      "name": "Composed, not gridded",
+      "trigger": "When arranging several images in a small space",
+      "decision": "Chose overlapping covers at five sizes with one anchor and two bleeding off the frame over an evenly spaced row",
+      "reason": "Because an even row reads like a shop shelf; an off-balance cluster reads like a desk mid-reading",
+      "evidence": [
+        "Pinterest collage: 2.2x size range",
+        "2 of 6 Pinterest tiles bleed off the top"
+      ]
+    },
+    {
+      "name": "Quiet facts, loud verb",
+      "trigger": "When the hero has numbers and actions competing",
+      "decision": "Chose stats as one 14px text line, red only on Browse the shelf and grey on Surprise me, over four boxed stat pills",
+      "reason": "Because boxed pills look like buttons and pull clicks; plain text informs without competing with the action",
+      "evidence": [
+        "4 boxed 36px stat pills before",
+        "Pinterest hero has exactly 2 controls, 48px, #E60023 + #E5E5E0"
+      ]
+    }
+  ]
+}
