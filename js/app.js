@@ -17,7 +17,7 @@
 
   const icon = {
     star: '<svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="m10 1.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>',
-    half: '<svg viewBox="0 0 20 20" aria-hidden="true"><defs><linearGradient id="hs"><stop offset="50%" stop-color="currentColor"/><stop offset="50%" stop-color="var(--fill)"/></linearGradient></defs><path fill="url(#hs)" d="m10 1.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>',
+    half: '<svg viewBox="0 0 20 20" aria-hidden="true"><defs><linearGradient id="hs"><stop offset="50%" stop-color="currentColor"/><stop offset="50%" stop-color="var(--border)"/></linearGradient></defs><path fill="url(#hs)" d="m10 1.6 2.6 5.3 5.8.8-4.2 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg>',
     close: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>',
     book: '<svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3.2c2-.9 4-.9 6 .4 2-1.3 4-1.3 6-.4V13c-2-.9-4-.9-6 .4-2-1.3-4-1.3-6-.4z"/></svg>',
     heart: '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 14s-5.5-3.3-5.5-7.4A3 3 0 0 1 8 4.8a3 3 0 0 1 5.5 1.8C13.5 10.7 8 14 8 14z"/></svg>',
@@ -34,7 +34,7 @@
   };
 
   // Placeholder tile colours: warm, muted, picked by title so they stay stable.
-  const SWATCH = ["#c8553d", "#2f4858", "#86626e", "#6b8f71", "#c58940", "#3d5a80", "#8d6a9f", "#5f6f52", "#a44a3f", "#33658a"];
+  const SWATCH = ["#1f1f1f", "#b83227", "#c96218", "#2d3138", "#a87a14", "#363230", "#993d28", "#45484f", "#262626", "#7a4424"];
   const swatch = (s) => SWATCH[[...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) % SWATCH.length];
   const placeholder = (b) => `
     <div class="ph" style="--ph:${swatch(b.title)}">
